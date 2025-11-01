@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exemplo de Âncoras e IDs</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #222;
+      padding: 20px;
+      text-align: center;
+      position: fixed;
+      width: 100%;
+      top: 0;
+      z-index: 10;
+    }
+
+    a {
+      color: #f4a958;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      scroll-margin-top: 80px; /* Evita que o título fique escondido pelo menu fixo */
+    }
+
+    #inicio {
+      background-color: #1e1e1e;
+    }
+
+    #sobre {
+      background-color: #3a2f2f;
+    }
+
+    #contato {
+      background-color: #2f3a31;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <!-- Links de navegação que são âncoras -->
+    <a href="#inicio">Início</a>
+    <a href="#sobre">Sobre</a>
+    <a href="#contato">Contato</a>
+  </header>
+
+  <!-- Seções identificadas com IDs -->
+  <section id="inicio">
+    <h1>Bem-vindo!</h1>
+    <p>Role ou clique nos links para navegar pelas seções.</p>
+  </section>
+
+  <section id="sobre">
+    <h1>Sobre Nós</h1>
+    <p>Essa é a seção "Sobre", acessada pela âncora #sobre.</p>
+  </section>
+
+  <section id="contato">
+    <h1>Contato</h1>
+    <p>Aqui está a seção "Contato", acessada pela âncora #contato.</p>
+  </section>
+</body>
+</html>
+
